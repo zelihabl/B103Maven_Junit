@@ -1,7 +1,6 @@
-package practice;
+package practice_E;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.checker.units.qual.K;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
