@@ -2,10 +2,7 @@ package practice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.checkerframework.checker.units.qual.K;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -52,11 +49,30 @@ public class P05 {
         aramaKutusu.sendKeys("The God Father", Keys.ENTER);
 
     }
+
+    @Test
+    public void test02() {
+        WebElement aramaKutusu=driver.findElement(By.xpath("//*[@class='gLFyf']"));
+        aramaKutusu.sendKeys("Lord of the Rings", Keys.ENTER);
+    }
+
+    @Test
+    public void test03() {
+        WebElement aramaKutusu=driver.findElement(By.xpath("//*[@class='gLFyf']"));
+        aramaKutusu.sendKeys("Kill Bill", Keys.ENTER);
+
+    }
+
     @After
     public void tearDown(){
         String [] sonuc =driver.findElement(By.xpath("//*[@id='result-stats']")).getText().split(" ");
         System.out.println(sonuc[1]);
 
 
+    }
+
+    @AfterClass
+    public static void afterClass() throws Exception {
+        driver.close();
     }
 }
