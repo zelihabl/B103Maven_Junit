@@ -99,9 +99,17 @@ public class C01_Dropdown {
     Dropdown liste olıuşturmak icin kullanılır
 
     2.How to handle dropdown elements? Dropdown nasıl automate edilir?
-    -dropdown i locate ederim
-    -select objesi i olustururum
-    -select objesi ile istediğim seceneği secerim
+
+    1.dropdown i locate ederim.8 locatorden biri
+    2.select objesi i olustururum
+    3.select objesi ile istediğim seceneği secerim
+    selectByındex(int)==>çok tercih edilmez
+    selectByValue("String")==>
+    selectByVisible("string")==>genel tercih
+
+***getOptions();tüm dropdown secenekleri List<WebElement> olarak return eder
+***getFirstSelectOption() secili olan seceneği return eder
+
 
     NOT:select objesi olusturma nedenim, dropdownların Select classı ile olusturulması
 
