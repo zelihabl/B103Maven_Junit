@@ -29,7 +29,24 @@ public abstract class  TestBase {
     //tearDown
     @After
     public void tearDown(){
+
         driver.close();
+    }
+    //    MULTIPLE WINDOW
+    //==> Bu method nedir??
+    //1 parametre alır:Gecis yapmak istediğim sayfanın title'ı
+    //Ornek:switchToWindow("New Window");==>eğer acık olan pencerelerde "new window" title olan yere otomatik geciş yapacak
+    //switchToWindow("The Internet);
+    public static void switchToWindow(String targetTitle) {
+        String origin = driver.getWindowHandle();
+        for (String handle : driver.getWindowHandles()) {
+            driver.switchTo().window(handle);
+            if (driver.getTitle().equals(targetTitle)) {
+                return;
+            }
+        }
+        driver.switchTo().window(origin);
+        //==>Bu meethod ne??
     }
 
 
