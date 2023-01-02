@@ -87,13 +87,6 @@ public class C01_Dropdown {
         driver.close();
     }
 
-
-
-
-
-
-
-
        /*
     1.What is dropdown? Dropdown nedir?
     Dropdown liste olıuşturmak icin kullanılır

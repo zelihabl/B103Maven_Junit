@@ -1,19 +1,18 @@
-package homework;
+package challenge_Selenium;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
-public class study {
+public class Challenge_Day04 {
     static WebDriver driver;
 
 
     public static void main(String[] args) {
+        //Not:class seviyesinde oluşturduğunuz static bir String değer ile
+        // 5.step ve 8.step de titledan gelecek String değerleri validate etmenizi bekliyoruz
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();

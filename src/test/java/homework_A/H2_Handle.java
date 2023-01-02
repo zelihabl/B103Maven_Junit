@@ -1,7 +1,7 @@
-package homework;
+package homework_A;
 
 public class H2_Handle {
-    /*
+     /*
     Bir class olusturun: IframeOdev
     https://the-internet.herokuapp.com/iframe  sitesine gidiniz
     sayfadaki toplam iframe sayısını bulunuz.

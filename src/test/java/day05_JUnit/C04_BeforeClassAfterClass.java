@@ -1,13 +1,8 @@
 package day05_JUnit;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-
-public class C04_BegoreClassAfterClass {
+public class C04_BeforeClassAfterClass {
 /*
     @BeforeClass--->Test01, Test02, Test03....-->@AfterClass
     Before--> Test01---> After
