@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class  TestBase {
 
@@ -48,6 +50,10 @@ public abstract class  TestBase {
         driver.switchTo().window(origin);
         //==>Bu meethod ne??
     }
+    public static void switchToWindow2(int windowNumber){
+        List<String> list = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(list.get(windowNumber));
+}
 
 
 }

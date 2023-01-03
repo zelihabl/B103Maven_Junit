@@ -56,7 +56,7 @@ public class C05_IFrame extends TestBase {
         DefaultContend yada parentFrame'e switch(geciş) yapabiliriz.
 
         **DefaultContend yada parentFrame ARASINDAKI FARKLAR NELER?
-        Oncelikle her ikiside framin dılına çıkmamızı sağlar.Ama defaultContend drekt ana sayfaya atlatır,
+        Oncelikle her ikiside framin dışına çıkmamızı sağlar.Ama defaultContend direkt ana sayfaya atlatır,
         parentFrame ise bir üst seviyeye atlatır.
 
         **BİR TEST CASEIN FAIL ETME SEBEPLERİ NELER OLABİLİR?
