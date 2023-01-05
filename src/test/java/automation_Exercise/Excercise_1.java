@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class TestCase_1 {
+public class Excercise_1 {
     public static void main(String[] args) throws InterruptedException {
 
 
@@ -39,7 +39,7 @@ public class TestCase_1 {
         //6. Enter name and email address
         //7. Click 'Signup' button
         WebElement nameButonu=driver.findElement(By.cssSelector("input[data-qa='signup-name']"));
-        nameButonu.sendKeys("Zeliha", Keys.TAB,"zelihaa98@gmail.com",Keys.TAB,Keys.ENTER);
+        nameButonu.sendKeys("Zeliha", Keys.TAB,"zelihhl@gmail.com",Keys.TAB,Keys.ENTER);
 
         //8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
         if (driver.findElement(By.xpath("//*[text()='Enter Account Information']")).isDisplayed()) {
@@ -49,12 +49,12 @@ public class TestCase_1 {
         //10. Select checkbox 'Sign up for our newsletter!'
         //11. Select checkbox 'Receive special offers from our partners!'
         WebElement cinsiyet=driver.findElement(By.id("id_gender2"));
-        cinsiyet.sendKeys(Keys.SPACE,Keys.TAB,Keys.TAB,"1234",Keys.TAB,"30",Keys.TAB,"June",Keys.TAB,"1991",
+        cinsiyet.sendKeys(Keys.SPACE,Keys.TAB,Keys.TAB,"1234",Keys.TAB,"24",Keys.TAB,"Feb",Keys.TAB,"1998",
                 Keys.TAB,Keys.SPACE,Keys.TAB,Keys.SPACE);
 
         //12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
         WebElement adress=driver.findElement(By.xpath("//*[@name='first_name']"));
-        adress.sendKeys("Zeliha",Keys.TAB,"Balık",Keys.TAB,"ZB",Keys.TAB,"Kırklareli",Keys.TAB,"Merkez");
+        adress.sendKeys("Zeliha",Keys.TAB,"Balı",Keys.TAB,"ZB",Keys.TAB,"Kırklareli",Keys.TAB,"Merkez");
 
         WebElement country=driver.findElement(By.xpath("//*[@id='country']"));
         Select ulke=new Select(country);
@@ -62,15 +62,20 @@ public class TestCase_1 {
         Thread.sleep(3000);
 
         //13. Click 'Create Account button'
-        country.sendKeys( Keys.TAB,"Merkez",Keys.TAB,"Kayseri",Keys.TAB,"39000",Keys.TAB,"054647847",Keys.ENTER);
+        country.sendKeys( Keys.TAB,"Merkez",Keys.TAB,"Kırklareli",Keys.TAB,"39000",Keys.TAB,"054647847",Keys.ENTER);
 
         //14. Verify that 'ACCOUNT CREATED!' is visible
         if(driver.findElement(By.xpath("//*[@class='header-middle']")).isDisplayed()){
             System.out.println("ACCOUNT CREATED!");
         }else System.out.println("yanlışşşş");
-//ALERTTTTT
+
+        //ALERTTTTT
         //15. Click 'Continue' button
         driver.findElement(By.xpath("//*[@class='btn btn-primary']")).click();
+
+      driver.findElement(By.xpath("//*[@class='ns-uwrzc-e-16']")).click();
+        driver.switchTo().alert().accept();
+
         //16. Verify that 'Logged in as username' is visible
 
         //17. Click 'Delete Account' button

@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import utilitles.TestBase;
 
-public class TestCase_3 extends TestBase {
+public class Excercise_3 extends TestBase {
     @Test
     public void Test01() {
 
@@ -14,10 +14,12 @@ public class TestCase_3 extends TestBase {
         //1. Launch browser
         //2. Navigate to url 'https://automationexercise.com/'
         driver.get("https://automationexercise.com/");
+
         //3. Verify that home page is visible successfully
         String actualURL = driver.getCurrentUrl();
         System.out.println(actualURL);
         Assert.assertEquals("https://automationexercise.com/", actualURL);
+
         //4. Click on 'Signup / Login' button
         driver.findElement(By.xpath("//*[@class='fa fa-lock']")).click();
         //5. Verify 'Login to your account' is visible
