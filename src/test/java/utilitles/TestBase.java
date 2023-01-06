@@ -78,6 +78,16 @@ public abstract class  TestBase {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(key)));
         return element;
 }
+    /*   HARD WAIT:
+        @param : second
+    */
+    public static void waitFor(int seconds){
+        try {
+            Thread.sleep(seconds*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }
