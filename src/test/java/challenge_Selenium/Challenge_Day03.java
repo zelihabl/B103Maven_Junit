@@ -47,9 +47,6 @@ public class Challenge_Day03 extends TestBase {
        }
 
 
-
-
-
     /*
     Day03_Challenge(cssSelector ile çözünüz.)
 
