@@ -39,7 +39,7 @@ public class Excercise_1 {
         //6. Enter name and email address
         //7. Click 'Signup' button
         WebElement nameButonu=driver.findElement(By.cssSelector("input[data-qa='signup-name']"));
-        nameButonu.sendKeys("Zeliha", Keys.TAB,"zelihhl@gmail.com",Keys.TAB,Keys.ENTER);
+        nameButonu.sendKeys("Zeliha", Keys.TAB,"zelihlaas@gmail.com",Keys.TAB,Keys.ENTER);
 
         //8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
         if (driver.findElement(By.xpath("//*[text()='Enter Account Information']")).isDisplayed()) {
@@ -73,7 +73,7 @@ public class Excercise_1 {
         //15. Click 'Continue' button
         driver.findElement(By.xpath("//*[@class='btn btn-primary']")).click();
 
-      driver.findElement(By.xpath("//*[@class='ns-uwrzc-e-16']")).click();
+        driver.findElement(By.xpath("//*[@class='ns-uwrzc-e-16']")).click();
         driver.switchTo().alert().accept();
 
         //16. Verify that 'Logged in as username' is visible

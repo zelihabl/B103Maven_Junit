@@ -32,6 +32,6 @@ public class C02_AlertsAccept extends TestBase {
     }
     /*
     1-Alertleri nasıl automate edersin?How to handle alerts in selenium?
-    -Alertler javascrip ile olusur.Inspect edilemezler.Oncelikle alerte switc etmemiz gerekir.
+    -Alertler javascrip ile olusur.Inspect edilemezler.Oncelikle alerte switch etmemiz gerekir.
      */
 }

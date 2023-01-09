@@ -4,9 +4,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -88,6 +90,45 @@ public abstract class  TestBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+    //    ACTIONS_RIGHT CLICK
+    public static void rightClickOnElementActions(WebElement element) { //sağ tık
+        Actions actions = new Actions(driver);
+        actions.contextClick(element).perform();
+    }
+    //ACTIONS_DOUBLE CLICK //cift
+    public static void doubleClick(WebElement element) {
+        new Actions(driver).doubleClick(element).build().perform();
+    }
+    //    ACTIONS_HOVER_OVER==>açıp bekleme
+    public static void hoverOverOnElementActions(WebElement element) {
+        new Actions(driver).moveToElement(element).perform();
+    }
+    //    ACTIONS_SCROLL_DOWN==>sayfayı aşağı indirme
+    public static void scrollDownActions() {
+        new Actions(driver).sendKeys(Keys.PAGE_DOWN).perform();
+    }
+    //    ACTIONS_SCROLL_UP==>
+    public static void scrollUpActions() {
+        new Actions(driver).sendKeys(Keys.PAGE_UP).perform();
+    }
+    //    ACTIONS_SCROLL_RIGHT
+    public static void scrollRightActions(){
+        new Actions(driver).sendKeys(Keys.ARROW_RIGHT).sendKeys(Keys.ARROW_RIGHT).perform();
+    }
+    //    ACTIONS_SCROLL_LEFT
+    public static void scrollLeftActions(){
+        new Actions(driver).sendKeys(Keys.ARROW_LEFT).sendKeys(Keys.ARROW_LEFT).perform();
+    }
+    //    ACTIONS_DRAG_AND_DROP==>elementi tutup sürükleme
+    public static void dragAndDropActions(WebElement source, WebElement target) {
+//        Actions actions = new Actions(driver);
+        new Actions(driver).dragAndDrop(source,target).perform();
+    }
+    //    ACTIONS_DRAG_AND_DROP_BY
+    public static void dragAndDropActions(WebElement source, int x, int y) {
+//        Actions actions = new Actions(driver);
+        new Actions(driver).dragAndDropBy(source,x,y).perform();
     }
 
 

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import utilitles.TestBase;
 
 public class Excercise_6 extends TestBase {
@@ -30,9 +31,11 @@ public class Excercise_6 extends TestBase {
         waitFor(3);
 
         //7. Upload file??*?????
-        //assert driver.findElement(By.name("upload_file")).isDisplayed();
+        assert driver.findElement(By.name("upload_file")).isDisplayed();
+        WebElement uploadFile = driver.findElement(By.xpath("//input[@name='upload_file']"));
+        uploadFile.sendKeys("C:\\Users\\zelih\\OneDrive\\Masaüstü\\logo.jpeg");
 
-        //8. Click 'Submit' button
+       // //8. Click 'Submit' button
         driver.findElement(By.xpath("//*[@name='submit']")).click();
         waitFor(3);
 
