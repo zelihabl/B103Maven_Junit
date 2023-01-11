@@ -1,9 +1,8 @@
-package practice_E.day11;
+package day11;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 

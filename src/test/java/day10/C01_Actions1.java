@@ -47,6 +47,8 @@ Bu tur işlemlerde sendKeys metodu kullanilir
         actions.contextClick(kutu).perform();
 
          //Alert’te cikan yazinin “You selected a context menu” oldugunu
+
+         //**object olusturmak wait durumlarda makuk
          Assert.assertEquals("You selected a context menu",driver.switchTo().alert().getText());
          //Tamam diyerek alert’i kapatın
          driver.switchTo().alert().accept();

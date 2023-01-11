@@ -35,6 +35,7 @@ public class C02_Actions2 extends TestBase {
 
         //2. UYGUN ACTIONS METHODUNU KULLAN. EN SONRA PERFORM KULLANAMAYI UNUTMA
         actions.moveToElement(accountList).perform();
+
         waitFor(3);
        // Acılan pencerede Account linkine tıkla
         driver.findElement(By.linkText("Account")).click();

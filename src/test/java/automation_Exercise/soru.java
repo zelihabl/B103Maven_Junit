@@ -13,47 +13,31 @@ public class soru extends TestBase {
 
     @Test
     public void test1() {
-        //1. Launch browser
-        //2. Navigate to url 'http://automationexercise.com'
-        driver.get("http://automationexercise.com");
+        //- - Amazon Test Case - -
+        //Mustafa Hoca atmıştı****
 
-        //3. Verify that home page is visible successfully
-        String actualTitle=driver.getTitle();
-        Assert.assertEquals("Automation Exercise",actualTitle);
-
-        //3. Verify that home page is visible successfully
-        WebElement homePage = driver.findElement(By.xpath("//body"));
-        Assert.assertTrue(homePage.isDisplayed());
-        //4. Click on 'Products' button
-        driver.findElement(By.xpath("//a[@href='/products']")).click();
-        //5. Verify user is navigated to ALL PRODUCTS page successfully
-        WebElement productPage = driver.findElement(By.xpath("//h2[@class='title text-center']"));
-        Assert.assertTrue(productPage.isDisplayed());
-        //6. The products list is visible
-        WebElement productList = driver.findElement(By.xpath("//*[@class='features_items']"));
-        Assert.assertTrue(productList.isDisplayed());
-        //7. Click on 'View Product' of first product
-        driver.switchTo().frame(0).findElement(By.id("google_esf")).click();
-        List<WebElement>ürün = driver.findElements(By.xpath("//*[@href='/product_details/1']"));
-        ürün.get(1).click();
-
-
-        //driver.findElement(By.xpath("//*[@href='/product_details/1']")).click();
-        //8. User is landed to product detail page
-        WebElement proDetail = driver.findElement(By.xpath("//*[@class='product-information']"));
-        Assert.assertTrue(proDetail.isDisplayed());
-        //9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
-        WebElement productName = driver.findElement(By.xpath("//h2[normalize-space()='Blue Top']"));
-        Assert.assertTrue(productName.isDisplayed());
-        WebElement category = driver.findElement(By.xpath("//p[normalize-space()='Category: Women > Tops']"));
-        Assert.assertTrue(category.isDisplayed());
-        WebElement price = driver.findElement(By.xpath("//span[normalize-space()='Rs. 500']"));
-        Assert.assertTrue(price.isDisplayed());
-        WebElement availability = driver.findElement(By.xpath("//b[normalize-space()='Availability:']"));
-        Assert.assertTrue(availability.isDisplayed());
-        WebElement condition = driver.findElement(By.xpath("//b[normalize-space()='Condition:']"));
-        Assert.assertTrue(condition.isDisplayed());
-        WebElement brand = driver.findElement(By.xpath("//b[normalize-space()='Brand:']"));
+        //* Ana sayfanın açıldığı kontrol edilir.
+        //* Çerez tercihlerinden Çerezleri kabul et seçilir.
+        //* Siteye login olunur.
+        //* Login işlemi kontrol edilir.
+        //* Hesabım bölümünden Team4 Liste isimli yeni bir liste oluşturulur.
+        //* Arama butonu yanındaki kategoriler tabından bilgisayar seçilir.
+        //* Bilgisayar kategorisi seçildiği kontrol edilir.
+        //* Arama alanına msi yazılır ve arama yapılır.
+        //* Arama yapıldığı kontrol edilir.
+        //* Arama sonuçları sayfasından 2. sayfa açılır.
+        //* 2. sayfanın açıldığı kontrol edilir.
+        //* Sayfadaki 2. ürün oluşturulan Team4 Liste listesine eklenir.
+        //* 2. Ürünün listeye eklendiği kontrol edilir.
+        //* Hesabım > Alışveriş Listesi sayfasına gidilir.
+        //* Alışveriş Listesi sayfası açıldığı kontrol edilir.
+        //* Eklenen ürün Team4 Liste’sinden silinir.
+        //* Silme işleminin gerçekleştiği kontrol edilir.
+        //* Team4 Listesi silinir.
+        //* Üye çıkış işlemi yapılır.
+        //* Çıkış işleminin yapıldığı kontrol edilir.
+        //
+        //*Duruma göre wait eklemenizde fayda olabilir.
 
 
     }

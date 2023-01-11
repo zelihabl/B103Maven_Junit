@@ -2,16 +2,16 @@ package challenge_Selenium;
 
 public class Challenge_Day10 {
     /*
-       url'ye git: http://demo.guru99.com/popup.php
-       ilk pencereyi al
-       "Click Here" butonuna tıklayın
-       setteki tüm pencereyi al
-       diğer pencereye geç
-       e-posta kimliğini (somepne@gmail.com) girin ve bu girişe bir şey yazın
-       Gönder düğmesine tıklayarak
-       ""This access is valid only for 20 days."" ifadesinin beklendiği gibi olduğunu doğrula
-       Tekrar ilk pencereye geç
-       İlk pencerede olduğunu doğrula
+    Day10_Challenge(WindowHandle!!)
+       //https://demoqa.com/ url'ine gidin.
+//Alerts, Frame & Windows Butonuna click yap
+//""Please select an item from left to start practice."" yazısının görünür olduğunu doğrula
+//Sol'da açılan Menu den ""Browser Windows"" butonuna click yap
+//New Tab butonunun görünür olduğunu doğrula
+//New Tab butonuna click yap
+//Açılan yeni Tab da ""This is a sample page"" yazısının görünür olduğunu doğrula
+//İlk Tab'a geri dön
+////New Tab butonunun görünür olduğunu doğrula
       */
 
 }

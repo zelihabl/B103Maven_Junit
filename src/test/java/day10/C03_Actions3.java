@@ -8,7 +8,7 @@ import utilitles.TestBase;
 
 public class C03_Actions3 extends TestBase {
     @Test
-    public void scrollUpDownTest() {
+    public void scrollUpDownTest() { //mause asağı yukarı hareket
         //https://techproeducation.com a git
         driver.get("https://techproeducation.com");
         //Sayfanin altına doğru gidelim

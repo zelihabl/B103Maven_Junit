@@ -11,7 +11,7 @@ import javax.swing.*;
 public class C04_DragAndDrop extends TestBase {
     @Test
     public void dragAndDropTest(){
-//        EN FAZLA SURUKLEMEK ICIN KULLANILAN METHOD BUDUR
+//        EN FAZLA SURUKLEMEK ICIN KULLANILAN METHOD BUDUR!!!
 //        Given user is on https://jqueryui.com/droppable/
         driver.get("https://jqueryui.com/droppable/");
 //        KAYNAK VE HEDEF ELEMENTLERI IFRAMEIN ICINDE
@@ -25,7 +25,7 @@ public class C04_DragAndDrop extends TestBase {
         waitFor(5);
     }
     @Test
-    public void clickAndHoldTest(){
+    public void clickAndHoldTest(){ //aynı işlem farklı şekilde yapıldı
 //        Given user is on https://jqueryui.com/droppable/
         driver.get("https://jqueryui.com/droppable/");
 //        KAYNAK VE HEDEF ELEMENTLERI IFRAMEIN ICINDE
@@ -36,16 +36,16 @@ public class C04_DragAndDrop extends TestBase {
 //        dragAndDrop() surukleme islemini gerceklestirir
         Actions actions = new Actions(driver);
         actions
-                .clickAndHold(kaynak)//KAYNAGU TUT
+                .clickAndHold(kaynak)//KAYNAGı TUT
                 .moveToElement(hedef)//hedefe koy
                 .release()//KAYNAGI BIRAK
                 .build()//onceki methodlarin iliskisini kur/guclendir. KULLANILMASI TERCIH EDILIR.
-                .perform();//islemi gerceklestir
+                .perform();//islemi gerceklestir,emir
 //
     }
     @Test
     public void moveByOffSetTest(){
-//        Given user is on https://jqueryui.com/droppable/
+//        Given user is on https://jqueryui.com/droppable/ ==>koordinat verdik
         driver.get("https://jqueryui.com/droppable/");
 //        KAYNAK VE HEDEF ELEMENTLERI IFRAMEIN ICINDE
         driver.switchTo().frame(0);
