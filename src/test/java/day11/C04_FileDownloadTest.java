@@ -12,9 +12,10 @@ public class C04_FileDownloadTest extends TestBase {
     @Test
     public void fileDownloadTest() {
         //Class : FileDownloadTest Method : downloadTestExist
-       //https://testcenter.techproeducation.com/index.php?page=file-download   adresine gidelim.
+       //1)https://testcenter.techproeducation.com/index.php?page=file-download   adresine gidelim.
         driver.get("https://testcenter.techproeducation.com/index.php?page=file-download ");
-       //b10 all test cases dosyasını indirelim
+
+       //2)b10 all test cases dosyasını indirelim
         driver.findElement(By.partialLinkText("b10 all test cases")).click();
         waitFor(3);
         //driver.findElement(By.partialLinkText(""))
@@ -22,7 +23,7 @@ public class C04_FileDownloadTest extends TestBase {
 
         //String filePath = System.getProperty("user.home")+"\\Downloads\\b10 all test cases, code.docx";==>üstteki çalışmazsa garanti
 
-        //Dosyanın başarıyla indirilip indirilmediğini test edelim
+        //3)Dosyanın başarıyla indirilip indirilmediğini test edelim
         boolean indirildimi = Files.exists(Paths.get(filePath));
         Assert.assertTrue(indirildimi);
 

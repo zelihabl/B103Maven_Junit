@@ -46,7 +46,7 @@ public class C02_JavaFaker {
         System.out.println(faker.number().digits(15));
 
         /*
-                  TEST DATA : kullanici adi, sifre, tel no, e-mail, sehir, kredi kart no,...
+          *******TEST DATA : kullanici adi, sifre, tel no, e-mail, sehir, kredi kart no,...
           Test datalari kimden alinir?
           1- BA-Business Analyst (Acceptance Criteria'lari yazar)
           2- Test Lead
